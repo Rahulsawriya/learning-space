@@ -20,6 +20,15 @@ for i in lst:
 #print(op)
 print(op)
 
+li1 = [1, 1, 2, 2, 2, 3, 4, 4, 4, 4]
+li2 = [2, 4, 5]
+for i in li2:
+    print("count of {} =".format(i), li1.count(i))
+
+#second method
+count_occurance = {i: li1.count(i) for i in li1}
+print(count_occurance.get(1))
+
 
 
 
