@@ -1,0 +1,2 @@
+#find third highest salary in employee
+SELECT * FROM employee ORDER BY salary DESC LIMIT 1 OFFSET 2;

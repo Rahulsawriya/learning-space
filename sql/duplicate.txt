@@ -1,0 +1,21 @@
+# Delete duplicate rows with the DELETE JOIN statement
+
+DELETE t1 FROM contacts t1  
+INNERJOIN contacts t2   
+WHERE  
+    t1.id < t2.id AND  
+    t1.email = t2.email;
+
+
+
+# Count of duplicate records.
+
+SELECT  
+    email,   
+COUNT (email)  
+FROM  
+    contacts  
+GROUP BY  
+    email  
+HAVING  
+COUNT (email) > 1;   
