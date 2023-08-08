@@ -1,2 +1,2 @@
-# knowledge-adda
+# learning-space
 learning stuff
